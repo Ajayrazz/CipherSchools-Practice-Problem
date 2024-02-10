@@ -1,0 +1,15 @@
+//program to find sum of digit of a three digit number
+#include <stdio.h>
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    int sum = 0;
+    while(num>0){
+        int lastdigit = num%10;
+        sum += lastdigit;
+        num = num/10;
+    }
+    printf("Sum of digit is %d",sum);
+    return 0;
+}
