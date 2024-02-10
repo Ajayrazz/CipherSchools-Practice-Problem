@@ -1,0 +1,13 @@
+//program to calculate power of a number by using for loop
+#include <stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d %d",&a,&b);
+    int pow_value = 1;
+    for(int i=1; i<=b; i++){
+        pow_value *= a;
+    }
+    printf("%d to the %d is %d.",a,b,pow_value);
+    return 0;
+}
