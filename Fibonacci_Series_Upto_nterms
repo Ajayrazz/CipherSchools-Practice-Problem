@@ -1,0 +1,17 @@
+//program to print fibonacci upto n terms by using for loop
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int a = 0;
+    int b = 1;
+    printf("%d %d ",a,b);
+    for(int i=2; i<n; i++){
+        int c = a+b;
+        a = b;
+        b = c;
+        printf("%d ",c);
+    }
+    return 0;
+}
