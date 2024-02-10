@@ -1,0 +1,20 @@
+//program to calculate area of circle , rectange 
+#include <stdio.h>
+int main()
+{
+    //for circle
+    int radius;
+    scanf("%d",&radius);
+    
+    //for rectangle
+    int length,breadth;
+    scanf("%d %d",&length,&breadth);
+    
+    float circle_area = 3.14 * radius * radius;
+    printf("Area of circle is %.2f\n",circle_area);
+    
+    int rectangle_area = length * breadth;
+    printf("Area of rectangle is %d\n",rectangle_area);
+    
+    return 0;
+}
