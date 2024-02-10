@@ -1,0 +1,10 @@
+//program to convert temp. from celcuis to fahrenhiet
+#include <stdio.h>
+int main()
+{
+    int celcuis;
+    scanf("%d",&celcuis);
+    int fahrenhiet = (celcuis * 9/5) + 32;
+    printf("%d",fahrenhiet);
+    return 0;
+}
