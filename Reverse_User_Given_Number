@@ -1,0 +1,17 @@
+//program to reverse a number using for loop
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    int reverse = 0;
+    int len = log10(num)+1;
+    for(int i=len; i>0; i--){
+        int lastdigit = num%10;
+        reverse = ((reverse * 10) + lastdigit);
+        num = num/10;
+    }
+    printf("Reverse of the given number is %d",reverse);
+    return 0;
+}
